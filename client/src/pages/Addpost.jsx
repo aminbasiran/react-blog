@@ -1,12 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout.jsx/Layout'
-import { Link } from 'react-router-dom'
-
 const Addpost = () => {
     return (
         <Layout>
             <Layout.Header/>
-            <h1 className='font-semibold px-3 py-2 cursor-pointer hover:text-black text-3xl text-zinc-400 transition-all duration-500 ease-in-out '>Create post</h1>
+            <h1 className='font-semibold px-3 py-2 cursor-pointer  text-3xl text-zinc-400  '>Create post</h1>
             <div className='w-full h-full'>
                 <form>
                     <input type="text" placeholder='Title' className='w-full ml-3 text-2xl border-none bg-transparent appearance-none focus:outline-none rounded-none my-3'/>

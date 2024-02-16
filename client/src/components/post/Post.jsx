@@ -5,7 +5,7 @@ import { FaEye } from "react-icons/fa";
 
 const Post = ({post}) => {
     return (
-        <CompoundArticle key={post.id}>
+        <CompoundArticle>
                     <CompoundArticle.Title>{post.title}</CompoundArticle.Title>
                     <CompoundArticle.Image source={post.image}/>
                     <p className=' text-zinc-600 text-xs font-semibold text-left mb-2'>25th January 2023</p>
@@ -21,7 +21,7 @@ const Post = ({post}) => {
                             <p className='text-sm font-semibold'>2.3k views</p>
                             
                         </div>
-                        <CompoundArticle.Button>Read more</CompoundArticle.Button>
+                        <CompoundArticle.Button to={`/post/${post.id}`}>Read more</CompoundArticle.Button>
                     </CompoundArticle.Views>
                 </CompoundArticle>
     )

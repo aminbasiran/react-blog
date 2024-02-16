@@ -15,7 +15,7 @@ function App() {
       element : <Home/>
     },
     {
-      path: "/post/article",
+      path: "/article",
       element : <Article/>
     },
     {
@@ -23,7 +23,7 @@ function App() {
       element : <Addpost/>
     },
     {
-      path: "/post/view",
+      path: "/post/:postID",
       element : <Viewpost/>
     }
   ])

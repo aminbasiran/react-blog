@@ -5,6 +5,7 @@ const Article = () => {
   return (
     <Layout>
         <Layout.Header/>
+        <Layout.Navbar/>
             article
     </Layout>
   )

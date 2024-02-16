@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Layout from '../components/layout.jsx/Layout'
 import { postObject } from '../resources';
 import Post from '../components/post/Post';
