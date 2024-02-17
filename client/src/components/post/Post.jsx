@@ -8,15 +8,14 @@ const Post = ({post}) => {
         <CompoundArticle>
                     <CompoundArticle.Title>{post.title}</CompoundArticle.Title>
                     <CompoundArticle.Image source={post.image}/>
-                    <p className=' text-zinc-600 text-xs font-semibold text-left mb-2'>25th January 2023</p>
+                    <p className=' text-zinc-600 text-xs font-semibold text-left mb-2 animate-fade-right animate-once animate-duration-[800ms] animate-delay-300' >25th January 2023</p>
                     <CompoundArticle.Description isExpanded={false}>{post.description}</CompoundArticle.Description>
                     <CompoundArticle.Views>
-                        <div  className='flex flex-row place-items-center gap-2'>
+                        <div className='cursor-pointer flex flex-row place-items-center gap-2'>
                             <FaHeartPulse/>
                             <p className='text-sm font-semibold'>18.2k likes</p>
-                            
                         </div>
-                        <div  className='flex flex-row place-items-center gap-2'>
+                        <div  className=' cursor-pointer flex flex-row place-items-center gap-2'>
                             <FaEye/>
                             <p className='text-sm font-semibold'>2.3k views</p>
                             
