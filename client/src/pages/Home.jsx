@@ -1,5 +1,5 @@
-import React from 'react'
-import Layout from '../components/layout.jsx/Layout'
+import React, {useEffect} from 'react'
+import Layout from '../components/layout/Layout'
 import { postObject } from '../resources';
 import Post from '../components/post/Post';
 

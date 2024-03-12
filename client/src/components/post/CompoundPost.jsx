@@ -7,12 +7,11 @@ import Button from '../button/Button'
 import { Link } from 'react-router-dom'
 
 const withNavigation = (WrappedComponent) => {
-    return ({ to, ...props }) => {
-        return <Link className='ml-auto' to={to}><WrappedComponent {...props} /></Link>;
+    return ({ to,handleViewPost, ...props }) => {
+        return <div onClick={handleViewPost} className='ml-auto'><Link   to={to}><WrappedComponent {...props} /></Link></div>
+            
     };
 };
-
-
 
 const CompoundPost = ({children}) => {
     

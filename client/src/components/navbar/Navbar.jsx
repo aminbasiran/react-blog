@@ -21,10 +21,6 @@ const Navbar = () => {
 
                 <li onClick={()=>handleChangeActive("home")} className={`${active==="home" ? "border-b-2 border-black" : ""} font-semibold px-3 py-2 cursor-pointer hover:bg-zinc-200 text-xs transition-all duration-500 ease-in-out`}>Home</li>
                 <li onClick={()=>handleChangeActive("article")} className={`${active==="article" ? "border-b-2 border-black" : ""} font-semibold px-3 py-2 cursor-pointer hover:bg-zinc-200 text-xs transition-all duration-500 ease-in-out`}>Articles</li>
-                <Link className="ml-auto" to="/post/add">
-                    <li className=' font-semibold px-3 py-2 cursor-pointer hover:text-black text-xs text-zinc-400 transition-all duration-500 ease-in-out '>+ Create post</li>
-                </Link>
-
 
             </ul>
         </div>
