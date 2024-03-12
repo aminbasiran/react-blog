@@ -1,10 +1,10 @@
 import React, {useEffect,useState} from 'react'
-import Layout from '../components/layout/Layout'
+import Layout from '../components/layout/Layout';
 import CompoundArticle from '../components/post/CompoundPost'
 import { FaHeartPulse } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
 import { useParams } from 'react-router-dom';
-import { postObject } from '../resources';
+import postObject from '../resources.json';
 
 const Viewpost = () => {
 
@@ -18,18 +18,16 @@ const Viewpost = () => {
 
     return (
         <Layout>
-            <Layout.Header/>
             {Object.keys(post).length > 0 && <CompoundArticle>
                 <CompoundArticle.Title>{post.title}</CompoundArticle.Title>
                 <CompoundArticle.Image source={post.image}/>
-                <p className=' text-zinc-600 text-xs font-semibold text-left mb-2'>25th January 2023</p>
                 <CompoundArticle.Description isExpanded={true}>{post.description}</CompoundArticle.Description>
                 <CompoundArticle.Views>
                     <div  className='cursor-pointer flex flex-row place-items-center gap-2'>
                         <FaEye/>
                         <p className='text-sm font-semibold'>{post.views} views</p>
                     </div>
-                <CompoundArticle.Button  className="ml-auto" to={"/"}>Go back</CompoundArticle.Button>
+                <CompoundArticle.Button  className="ml-auto" to={"/home"}>Go back</CompoundArticle.Button>
                 </CompoundArticle.Views>
             </CompoundArticle>}    
         </Layout>

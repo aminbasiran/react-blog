@@ -4,9 +4,7 @@ import Layout from '../components/layout/Layout'
 const Article = () => {
   return (
     <Layout>
-        <Layout.Header/>
-        <Layout.Navbar/>
-            article
+      article
     </Layout>
   )
 }

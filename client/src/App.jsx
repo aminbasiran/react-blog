@@ -1,31 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/Home'
-import Article from './pages/Article';
-import Viewpost from './pages/Viewpost';
-
+import { Outlet  } from 'react-router-dom';
+import Header from './components/header/Header';
+import Navbar from './components/navbar/Navbar';
+import Layout from './components/layout/Layout';
 
 function App() {
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element : <Home/>
-    },
-    {
-      path: "/article",
-      element : <Article/>
-    },
-  
-    {
-      path: "/post/:postID",
-      element : <Viewpost/>
-    }
-  ])
-
   return (
-    <RouterProvider router={router}/>
+    <div className='max-w-[1000px] mx-auto p-5 bg-[#f3f3f3] shadow-md'>
+      <Header/>
+      <Navbar/>
+      <Outlet/>
+    </div>
   )
 }
 
